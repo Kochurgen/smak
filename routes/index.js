@@ -29,8 +29,7 @@ router.post('/',function (req, res, next) {
     }, function (err) {
         if (err) {
             // handle error
-            console.log(err);
-            res.send('There was an error sending the email');
+            res.redirect('/');
             return;
         }
         res.redirect('/');
