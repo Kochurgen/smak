@@ -14,8 +14,7 @@ RAD.view('view.router', RAD.Blanks.View.extend({
 	events: {
 		'tap #back': 'tapBack',
 		'tap #logout': 'tapLogout',
-		'tap #shopping-cart': 'goToCart',
-		'tap #contact': 'tapContent'
+		'tap #shopping-cart': 'goToCart'
 	},
 	sendView: '',
 	controls: {
@@ -29,7 +28,9 @@ RAD.view('view.router', RAD.Blanks.View.extend({
 		],
 		'.header-title-main': [
 			'view.main',
-			'view.item_info'
+			'view.item_info',
+			'view.shopping_cart',
+			'view.open_info'
 		],
 		'.header-title-result': [
 			'view.results'
@@ -37,7 +38,8 @@ RAD.view('view.router', RAD.Blanks.View.extend({
 		'.header-item-right': [
 			'view.main',
 			'view.results',
-			'view.item_info'
+			'view.item_info',
+			'view.shopping_cart'
 		]
 	},
 	model:new RAD.model('shoppingCart'),
