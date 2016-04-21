@@ -1,0 +1,38 @@
+<div class="content">
+    <form data-template action="http://localhost:3000/" method="post">
+    {{# var result= 0 }}
+    <div id="result" class="result" >
+        <div>Ім'я отримувача</div>
+        <input name="name" type="text" required>
+        <div>Телефон</div>
+        <input type="tel" name="tel" required>
+        <div>Email</div>
+        <input type="email" name="email" required>
+        <div>Коментар</div>
+        <textarea type="email" name="comment"></textarea>
+        {{# _.each(model, function(elem, index){ }}
+        <li class="item block" data-index="{{ index }}">
+            <div name="name" id="buttonrow" class="buttonrow">
+                <a class="name">
+                    {{ elem.name }}
+                </a>
+            </div>
+            <div name="count" class="count" style="display: inline-block">{{ elem.quantity }} шт.</div>
+            <div name="summ" class="summ" style="display: inline-block; float: right">{{ elem.resultSumm() }} грн</div>
+        </li>
+        {{# result+=elem.resultSumm() }}
+        {{# }) }}
+        <input name="model" type="hidden" value='{{ JSON.stringify(model) }}'>
+    </div>
+    <div class="number">
+        <div name="globalSumm" class="result" style="display: inline-block; float: right" data-template>Загально: {{ result }} грн</div>
+    </div>
+    <div class="buy">
+        <div class="price">
+            <a onclick="addToCart('');" class="button" title="Cost"></a>
+        </div>
+        <input type="submit" value="Придбати" class="buy-button">
+    </div>
+    </form>
+</div>
+<div class="bottom"></div>

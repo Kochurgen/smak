@@ -1,0 +1,40 @@
+<div class="content_info" data-template>
+        <div class="item-name">
+            <div class="name">
+                {{ model.name }}
+            </div>
+        </div>
+            <div class="big_image">
+                <img class="info_image" src="{{ model.img }}">
+                <a href=""></a>
+            </div>
+            <div id="buttonrow" class="buttonrow">
+                <div class="fruit">
+                    <span class="name_fruit">Плоди:</span>
+                    {{# _.each(model.fruit, function(elem, index){ }}
+                    <a class="info" data-info="{{ window.config.TeaType[elem] }}">{{ elem }}</a>
+                    {{# }); }}
+                </div>
+                <div class="leaf">
+                    <span class="name_leaf">Листя:</span>
+                    {{# _.each(model.leaf, function(elem, index){ }}
+                    <a class="info" data-info="{{ window.config.TeaType[elem] }}">{{ elem }}</a>
+                    {{# }); }}
+                </div>
+            </div>
+    <div class="buy">
+        <div class="number">
+            <span class="minus">-</span>
+            <input class="counter" type="tel" style="width:35px; height: 20px;" value="{{ model.quantity }}" disabled>
+            <span class="plus">+</span>
+        </div>
+        <div class="price">
+            <span class="priceType">Роздріб </span><span class="button" title="Cost">{{ model.cost }} {{ model.money }}</span>
+        </div>
+        <div class="optPrice">
+            <span class="priceType">Опт від 10 штук </span><span class="button" title="Cost">{{ model.optCost }} {{ model.money }}</span>
+        </div>
+        <input type="button" class="buy-button" data-index="{{ model.id }}" value="Придбати">
+    </div>
+</div>
+<div class="bottom"></div>

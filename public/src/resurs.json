@@ -1,0 +1,64 @@
+{
+  "model":[
+    {
+     "img":"../img/20150909_214425.jpg",
+     "cost":"25 грн",
+     "information":""
+    },
+    {
+      "img":"../img/20150909_214515.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214425.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/PIX_9910.JPG",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214425.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214515.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214425.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/PIX_9910.JPG",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214425.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214515.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/20150909_214425.jpg",
+      "cost":"25 грн",
+      "information":""
+    },
+    {
+      "img":"../img/PIX_9910.JPG",
+      "cost":"25 грн",
+      "information":""
+    }
+  ]
+}

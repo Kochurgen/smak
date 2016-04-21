@@ -1,0 +1,31 @@
+<div class="content">
+    <ul class="list-items">
+        {{# _.each(model, function(elem, index){ }}
+
+        <li class="item block" data-index="{{ index }}">
+            <div class="image">
+                <img src="{{ elem.img }}" style="width: 100px; height: 100px">
+                <a href=""></a>
+            </div>
+            <div id="buttonrow" class="buttonrow">
+                <a class="name">
+                    {{ elem.name }}
+                </a>
+                <div class="shortinfo">
+                    {{ elem.shortinformation }}
+                </div>
+            </div>
+            <div class="buy">
+                <div class="price">
+                    <span class="priceType">Роздріб </span><span class="button" title="Cost">{{ elem.cost }} {{ elem.money }}</span>
+                </div>
+                <div class="optPrice">
+                    <span class="priceType">Опт від 10 штук </span><span class="button" title="Cost">{{ elem.optCost }} {{ elem.money }}</span>
+                </div>
+                <input type="button" class="buy-button" data-index="{{ elem.id }}" value="Придбати">
+            </div>
+        </li>
+        {{# }) }}
+    </ul>
+</div>
+<div class="bottom"></div>
